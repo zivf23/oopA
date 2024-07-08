@@ -2,14 +2,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CompositeElement extends Element {
-    private List<Element> children = new ArrayList<>();
-    private String name;
+    private final List<Element> children = new ArrayList<>();
+    private final String name;
 
     public CompositeElement(String name) {
         this.name = name;
     }
 
     public void add(Element element) {
+        // Add element to the children list
         children.add(element);
     }
 
